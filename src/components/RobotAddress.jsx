@@ -8,6 +8,9 @@ function RobotAddress({address}) {
         <p>Street : {address.street}</p>
         <p>ZipCode : {address.zipcode}</p>
         <p>City : {address.city}</p>
+        <div>
+            <button onClick={() => alert('coucou')} >Show Address</button>
+        </div>
     </div>
   )
 }
