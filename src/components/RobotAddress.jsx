@@ -4,7 +4,8 @@ function RobotAddress({address}) {
     const [showAddress, setShowAddress] = useState(false);
     
     // Function to handle the value of showAddress
-    const handleDisplayAddressOnClick = () =>{
+    const handleDisplayAddressOnClick = (event) =>{
+        event.stopPropagation();
         setShowAddress(!showAddress);
     }
   return (
@@ -25,7 +26,7 @@ function RobotAddress({address}) {
             <button className=
             {
             `robot-button-black ${!showAddress?'robot-button-showAddress':'robot-button-hideAddress'}`
-            } onClick={() => handleDisplayAddressOnClick()} >{!showAddress?'Show Address':'Hide Address'}</button>
+            } onClick={(event) => handleDisplayAddressOnClick(event)} >{!showAddress?'Show Address':'Hide Address'}</button>
         </div>
     </div>
   )

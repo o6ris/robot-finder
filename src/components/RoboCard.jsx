@@ -3,7 +3,7 @@ import RobotAddress from './RobotAddress';
 function RoboCard({robot}) {
  
   return (
-    <div className='robot-card d-flex flex-column rounded-4'>
+    <div onClick={()=>alert('')} className='robot-card d-flex flex-column rounded-4'>
         <h1>{robot.name}</h1>
         <div className='d-flex align-items-center justify-content-around '>
             <div>

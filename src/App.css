@@ -74,12 +74,6 @@ img{
  
 }
 
-/* .robot-card:active{
-  transform: translateY(2px);
-  border-bottom: 0;
-  border-left: 0;
-} */
-
 .robot-card ul{
   list-style: none;
   padding: 0;
