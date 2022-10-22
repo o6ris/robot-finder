@@ -8,6 +8,9 @@ function App() {
   return (
     <div>
       <h1>Robot finder</h1>
+      <div className='text-center'>
+        <input className='robot-search-bar' type="text" placeholder='Search a robot' />
+      </div>
       <div className="robots-display">
         
         {Robots.map((robot,index) =>{

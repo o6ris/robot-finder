@@ -1,3 +1,13 @@
+.robot-search-bar{
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  width: 50%;
+  margin-top: 20px;
+  background-color: rgb(33, 33, 33);
+  color: white;
+}
+
 .robots-display {
   display: grid;
   grid-template-columns: 1fr;
