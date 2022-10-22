@@ -17,7 +17,7 @@ function RobotAddress({address}) {
         </div>
 
         <div>
-            <button onClick={() => handleDisplayAddressOnClick()} >Show Address</button>
+            <button onClick={() => handleDisplayAddressOnClick()} >{!showAddress?'Show Address':'Hide Address'}</button>
         </div>
     </div>
   )
