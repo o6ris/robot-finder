@@ -1,5 +1,6 @@
 import React from 'react'
 import RobotAddress from './RobotAddress';
+import RobotFile from '../pages/RobotFile';
 function RoboCard({robot}) {
  
   return (

@@ -5,6 +5,7 @@ function RobotAddress({address}) {
     
     // Function to handle the value of showAddress
     const handleDisplayAddressOnClick = (event) =>{
+        // stop propagation onClick on container (RobotCard)
         event.stopPropagation();
         setShowAddress(!showAddress);
     }
