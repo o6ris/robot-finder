@@ -9,7 +9,7 @@ function RobotAddress({address}) {
   return (
       <div>
         <div className={!showAddress?'d-none':'""'}>
-            {console.log(showAddress)}
+  
             <h3><small>Address :</small></h3>
             <ul>
                 <li><strong>Street :</strong> {address.street}</li>

@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import RoboCard from './components/RoboCard';
 import Robots from './data/data';
+import SearchRobot from './components/SearchRobot';
 
 function App() {
 
@@ -11,13 +12,11 @@ function App() {
   return (
     <div>
       <h1>Robot finder</h1>
-      <div className='text-center'>
-        <input onChange={(e) => setSearchRobot(e.target.value)} className='robot-search-bar' type="text" placeholder='Search a robot' />
-      </div>
+      <SearchRobot setSearchRobot={setSearchRobot}/>
       <div className="robots-display">
         
         {Robots
-        .filter(robot => robot.name.includes(searchRobot))
+        .filter(robot => robot.name.toLowerCase().includes(searchRobot.toLowerCase()))
         .map((robot,index) =>{
           return(
             <div>
