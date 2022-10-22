@@ -1,9 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 function RobotAddress({address}) {
-    console.log(address)
+    const [showAddress, setShowAddress] = useState(false);
+
+    const handleDisplayAddressOnClick = () =>{
+        setShowAddress(!showAddress);
+    }
   return (
-    <div>
+    <div className='d-none'>
+        {console.log(showAddress)}
         <h2>Address :</h2>
         <p>Street : {address.street}</p>
         <p>ZipCode : {address.zipcode}</p>
