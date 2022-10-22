@@ -23,6 +23,11 @@ img{
   margin-left: 15px;
 }
 
+.robot-header{
+  background-image: url('./assets/bg-header.jpg');
+  height: 300px;
+}
+
 .robot-search-bar{
   padding: 15px;
   border: none;
@@ -60,7 +65,7 @@ img{
   padding: 0;
 }
 
-.robot-button{
+.robot-button-black{
   background-color: rgb(33, 33, 33);
   padding: 10px;
   border: none;
@@ -68,6 +73,16 @@ img{
   color: white;
   border-bottom: 3px solid rgb(23, 23, 23);
   border-left: 3px solid rgb(62, 62, 62);
+  width: 40%;
+}
+.robot-button-white{
+  background-color: rgb(228, 228, 228);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  border-bottom: 3px solid rgb(192, 192, 192);
+  border-left: 3px solid rgb(255, 255, 255);
   width: 40%;
 }
 
