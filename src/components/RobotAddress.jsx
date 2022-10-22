@@ -7,14 +7,17 @@ function RobotAddress({address}) {
         setShowAddress(!showAddress);
     }
   return (
-    <div className='d-none'>
-        {console.log(showAddress)}
-        <h2>Address :</h2>
-        <p>Street : {address.street}</p>
-        <p>ZipCode : {address.zipcode}</p>
-        <p>City : {address.city}</p>
+      <div>
+        <div className={!showAddress?'d-none':'""'}>
+            {console.log(showAddress)}
+            <h2>Address :</h2>
+            <p>Street : {address.street}</p>
+            <p>ZipCode : {address.zipcode}</p>
+            <p>City : {address.city}</p>
+        </div>
+
         <div>
-            <button onClick={() => alert('coucou')} >Show Address</button>
+            <button onClick={() => handleDisplayAddressOnClick()} >Show Address</button>
         </div>
     </div>
   )
