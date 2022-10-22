@@ -3,7 +3,7 @@ import './App.css';
 import RoboCard from './components/RoboCard';
 import Robots from './data/data';
 import SearchRobot from './components/SearchRobot';
-
+import ShowMoreRobots from './components/ShowMoreRobots';
 function App() {
 
   const [searchRobot, setSearchRobot] = useState('')
@@ -26,12 +26,7 @@ function App() {
           )
         })}
       </div>
-      <div className='d-flex justify-content-center'>
-        <button onClick={() => setNumberOfRobots(numberOfRobots+4) } className='robot-button mb-5'>
-        {numberOfRobots >= Robots.length?'No more Robots':'Show More'}
-          </button>
-    
-      </div>
+      <ShowMoreRobots numberOfRobots={numberOfRobots} setNumberOfRobots={setNumberOfRobots} robots={Robots}/>
     </div>
   );
 }
