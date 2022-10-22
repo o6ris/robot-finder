@@ -12,7 +12,7 @@ function App() {
     <div>
       <NavBar setPage={setPage}/>
       {page === 'RobotFinder'?<RobotFinder />:''}
-      {page === 'Home'?<Home />:''}
+      {page === 'Home'?<Home setPage={setPage}/>:''}
       {page === 'Page2'?<Page2 />:''}
     </div>
   );
