@@ -7,7 +7,7 @@ import SearchRobot from './components/SearchRobot';
 function App() {
 
   const [searchRobot, setSearchRobot] = useState('')
-
+  const [numberOfRobots, setNumberOfRobots] = useState(0)
 
   return (
     <div>
@@ -17,7 +17,7 @@ function App() {
         
         {Robots
         .filter(robot => robot.name.toLowerCase().includes(searchRobot.toLowerCase()))
-        .slice(0,6)
+        .slice(0,numberOfRobots+4)
         .map((robot,index) =>{
           return(
             <div>
@@ -27,7 +27,10 @@ function App() {
         })}
       </div>
       <div className='d-flex justify-content-center'>
-        <button className='robot-button mb-5'>Show More</button>
+        <button onClick={() => setNumberOfRobots(numberOfRobots+4) } className='robot-button mb-5'>
+        {numberOfRobots >= Robots.length?'No more Robots':'Show More'}
+          </button>
+    
       </div>
     </div>
   );
