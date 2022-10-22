@@ -8,7 +8,7 @@ function RobotFinder() {
   const [searchRobot, setSearchRobot] = useState('')
   const [numberOfRobots, setNumberOfRobots] = useState(0)
   return (
-    <div>
+    <div className='robot-main'>
       <h1>Robot finder</h1>
       {/* search bar */}
       <SearchRobot setSearchRobot={setSearchRobot}/>

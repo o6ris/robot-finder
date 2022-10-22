@@ -5,7 +5,7 @@ function RoboCard({robot}) {
   return (
     <div className='robot-card d-flex flex-column rounded-4'>
         <h1>{robot.name}</h1>
-        <div className='d-flex align-items-center '>
+        <div className='d-flex align-items-center justify-content-around '>
             <div>
                 <img src={`https://robohash.org/${robot.id}/set=set3`} alt="" />
             </div>
