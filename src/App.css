@@ -14,6 +14,15 @@ img{
   background-color: rgb(33, 33, 33);
   justify-content: space-around;
 }
+
+.robot-navbar li{
+  cursor: pointer;
+}
+
+.robot-navbar li:hover{
+  font-weight: bolder;
+}
+
 .robot-menu{
   display: flex;
   justify-content: flex-end;
@@ -57,8 +66,19 @@ img{
   padding: 20px;
   border-bottom: 5px solid rgb(17, 17, 17);
   border-left: 5px solid rgb(105, 105, 105);
-  /* width: 100%; */
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
+.robot-card:hover{
+  background-color: rgb(55, 55, 55);
+ 
+}
+
+/* .robot-card:active{
+  transform: translateY(2px);
+  border-bottom: 0;
+  border-left: 0;
+} */
 
 .robot-card ul{
   list-style: none;
@@ -75,6 +95,11 @@ img{
   border-left: 3px solid rgb(62, 62, 62);
   width: 40%;
 }
+.robot-button-black:active{
+  transform: translateY(2px);
+    border-bottom: 0;
+    border-left: 0;
+}
 .robot-button-white{
   background-color: rgb(228, 228, 228);
   padding: 10px;
@@ -84,6 +109,11 @@ img{
   border-bottom: 3px solid rgb(192, 192, 192);
   border-left: 3px solid rgb(255, 255, 255);
   width: 40%;
+}
+.robot-button-white:active{
+    transform: translateY(2px);
+    border-bottom: 0;
+    border-left: 0;
 }
 
 .robot-button-showAddress{
