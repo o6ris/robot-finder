@@ -17,6 +17,7 @@ function App() {
         
         {Robots
         .filter(robot => robot.name.toLowerCase().includes(searchRobot.toLowerCase()))
+        .slice(0,4)
         .map((robot,index) =>{
           return(
             <div>
@@ -24,6 +25,9 @@ function App() {
             </div>
           )
         })}
+      </div>
+      <div className='d-flex justify-content-center'>
+        <button className='robot-button mb-5'>Show More</button>
       </div>
     </div>
   );

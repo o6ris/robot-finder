@@ -19,7 +19,10 @@ function RobotAddress({address}) {
         </div>
 
         <div>
-            <button className={!showAddress?'robot-button-showAddress':'robot-button-hideAddress'} onClick={() => handleDisplayAddressOnClick()} >{!showAddress?'Show Address':'Hide Address'}</button>
+            <button className=
+            {
+            `robot-button ${!showAddress?'robot-button-showAddress':'robot-button-hideAddress'}`
+            } onClick={() => handleDisplayAddressOnClick()} >{!showAddress?'Show Address':'Hide Address'}</button>
         </div>
     </div>
   )
