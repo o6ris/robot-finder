@@ -17,7 +17,7 @@ function App() {
         
         {Robots
         .filter(robot => robot.name.toLowerCase().includes(searchRobot.toLowerCase()))
-        .slice(0,4)
+        .slice(0,6)
         .map((robot,index) =>{
           return(
             <div>
