@@ -2,7 +2,8 @@ import React, {useState} from 'react'
 
 function RobotAddress({address}) {
     const [showAddress, setShowAddress] = useState(false);
-
+    
+    // Function to handle the value of showAddress
     const handleDisplayAddressOnClick = () =>{
         setShowAddress(!showAddress);
     }
@@ -19,6 +20,8 @@ function RobotAddress({address}) {
         </div>
 
         <div>
+            {/* call handleDisplayAddressOnClick function on click to change the style
+            of the button and handle the address display*/}
             <button className=
             {
             `robot-button ${!showAddress?'robot-button-showAddress':'robot-button-hideAddress'}`

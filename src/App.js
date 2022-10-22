@@ -12,9 +12,13 @@ function App() {
   return (
     <div>
       <h1>Robot finder</h1>
+      {/* search bar */}
       <SearchRobot setSearchRobot={setSearchRobot}/>
+
+      {/* robots display */}
       <div className="robots-display">
-        
+
+        {/* filter Robots per name, display only 4 robots with slice and map function. */}
         {Robots
         .filter(robot => robot.name.toLowerCase().includes(searchRobot.toLowerCase()))
         .slice(0,numberOfRobots+4)
@@ -26,6 +30,8 @@ function App() {
           )
         })}
       </div>
+
+      {/* show more button */}  
       <ShowMoreRobots numberOfRobots={numberOfRobots} setNumberOfRobots={setNumberOfRobots} robots={Robots}/>
     </div>
   );
