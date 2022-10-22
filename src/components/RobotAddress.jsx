@@ -10,14 +10,16 @@ function RobotAddress({address}) {
       <div>
         <div className={!showAddress?'d-none':'""'}>
             {console.log(showAddress)}
-            <h2>Address :</h2>
-            <p>Street : {address.street}</p>
-            <p>ZipCode : {address.zipcode}</p>
-            <p>City : {address.city}</p>
+            <h3><small>Address :</small></h3>
+            <ul>
+                <li><strong>Street :</strong> {address.street}</li>
+                <li><strong>ZipCode :</strong> {address.zipcode}</li>
+                <li><strong>City :</strong> {address.city}</li>
+            </ul>
         </div>
 
         <div>
-            <button onClick={() => handleDisplayAddressOnClick()} >{!showAddress?'Show Address':'Hide Address'}</button>
+            <button className={!showAddress?'robot-button-showAddress':'robot-button-hideAddress'} onClick={() => handleDisplayAddressOnClick()} >{!showAddress?'Show Address':'Hide Address'}</button>
         </div>
     </div>
   )

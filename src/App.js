@@ -6,15 +6,19 @@ import Robots from './data/data';
 function App() {
   
   return (
-    <div className="App">
-      {Robots.map((robot,index) =>{
-        return(
-          <div>
-            <h1>Robot finder</h1>
-            <RoboCard index={index} robot={robot}  />
-          </div>
-        )
-      })}
+    <div>
+      <h1>Robot finder</h1>
+      <div className="robots-display">
+        
+        {Robots.map((robot,index) =>{
+          return(
+            <div>
+              
+              <RoboCard index={index} robot={robot}  />
+            </div>
+          )
+        })}
+      </div>
     </div>
   );
 }
