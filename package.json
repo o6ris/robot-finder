@@ -2,7 +2,7 @@
   "name": "robot-finder",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://o6ris.github.io/robot-finder",
+  "homepage": "https://o6ris.github.io/robot-finder",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
@@ -37,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
