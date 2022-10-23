@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-function RobotAddress({address, page, robot}) {
+function RobotAddress({address, page, robot, setShowLocalisation, showLocalisation}) {
     // I recieve all the props
 
     const [showAddress, setShowAddress] = useState(false);
@@ -20,7 +20,12 @@ function RobotAddress({address, page, robot}) {
                 <li><strong>Street :</strong> {address.street}</li>
                 <li><strong>ZipCode :</strong> {address.zipcode}</li>
                 <li><strong>City :</strong> {address.city}</li>
-                <li classs='robot-localisation-link'>{page === robot.id? 'Display geolocalisation':''}</li>
+
+                {/* OnClick I change showLocalisation value */}
+                <li onClick={() => setShowLocalisation(!showLocalisation)}className='robot-localisation-link'>
+                {/* if i'm in a single page, display the geolocalisation link */}
+                {page === robot.id? 'Display geolocalisation':''}
+                </li>
             </ul>
         </div>
 
