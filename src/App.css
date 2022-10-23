@@ -14,7 +14,7 @@ ul{
 .robot-navbar{
   display: flex;
   padding: 30px;
-  margin: 20px 0;
+  margin: 0;
   background-color: rgb(33, 33, 33);
   justify-content: space-around;
 }
@@ -37,6 +37,7 @@ ul{
 }
 
 .robot-header{
+  margin-top: 0;
   background-image: url('./assets/bg-header.jpg');
   height: 300px;
 }
@@ -138,7 +139,7 @@ ul{
 }
 
 .robot-singleCard{
-  margin: 0 5%;
+  margin: 20px 5%;
   background-color: rgb(33, 33, 33);
   padding: 20px;
  }
