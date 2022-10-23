@@ -11,17 +11,17 @@ import Robots from './data/data';
 function App() {
   // Create the state page with value 'home' per default
   const [page, setPage] = useState('Home')
-  const test = Robots.filter(robot => `RobotFile${robot.id}`=== `RobotFile5`)
+
   
-console.log(test);
+
   
   return (
     <div>
       {/* Call the component NavBar and send it the setPage function */}
       <NavBar setPage={setPage}/>
-      
+
       {/* 3 ternary that display 3 page depending on page state value */}
-      {page === 'RobotFinder'?<RobotFinder setPage={setPage}/>:''}
+      {page === 'RobotFinder'?<RobotFinder setPage={setPage} page={page} />:''}
       {page === 'Home'?<Home setPage={setPage}/>:''}
       {page === 'Page2'?<Page2 />:''}
 
@@ -30,7 +30,8 @@ console.log(test);
       {
       Robots
       .filter(robot => page === robot.id)
-      .map((robot,index) => <RobotFile robot={robot} index={index}/> )
+      // Here I send page value to RobotFile
+      .map((robot,index) => <RobotFile robot={robot} index={index} page={page}/> )
       }
     </div>
   );

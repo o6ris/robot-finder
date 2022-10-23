@@ -24,7 +24,7 @@ function RobotFinder({setPage}) {
         .map((robot,index) =>{
           return(
             <div>
-              <RoboCard index={index} robot={robot} setPage={setPage}  />
+              <RoboCard index={index} robot={robot} setPage={setPage} />
             </div>
           )
         })}

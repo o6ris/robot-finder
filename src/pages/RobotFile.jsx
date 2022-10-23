@@ -1,8 +1,8 @@
 import React from 'react'
 import RobotAddress from '../components/RobotAddress'
 
-function RobotFile({robot}) {
- 
+function RobotFile({robot, page}) {
+  
  
     return (
       <div className='robot-card d-flex flex-column rounded-4'>
@@ -26,7 +26,9 @@ function RobotFile({robot}) {
             </div>
 
             <div>
-                <RobotAddress address={robot.address}/>
+            {/* Here I send page value object robot and address to RobotAddress
+            because I'll need them */}
+            <RobotAddress address={robot.address} page={page} robot={robot}/>
             </div>
             
         </div>

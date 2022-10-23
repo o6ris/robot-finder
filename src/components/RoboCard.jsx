@@ -2,7 +2,7 @@ import React from 'react'
 import RobotAddress from './RobotAddress';
 
 function RoboCard({robot, setPage}) {
-
+    
   return (
     // Set page value to robot ID OnClick
     <div onClick={() => setPage(robot.id)} className='robot-card d-flex flex-column rounded-4'>
@@ -25,7 +25,7 @@ function RoboCard({robot, setPage}) {
                 </div>
 
                 <div>
-                    <RobotAddress address={robot.address}/>
+                    <RobotAddress address={robot.address} robot={robot}/>
                 </div>
             </div>
         </div>
