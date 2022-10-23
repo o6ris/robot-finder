@@ -8,7 +8,7 @@ function NavBar({setPage}) {
             <li onClick={() => setPage('Home')}>Home</li>
             <div className='robot-menu'>
                 <li onClick={() => setPage('RobotFinder')}>Robot Finder</li>
-                <li onClick={() => setPage('Page2')}>Page 2</li>
+                {/* <li onClick={() => setPage('Page2')}>Page 2</li> */}
             </div>
           </ul>
         </nav>

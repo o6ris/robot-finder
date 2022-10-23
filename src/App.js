@@ -23,7 +23,7 @@ function App() {
       {/* 3 ternary that display 3 page depending on page state value */}
       {page === 'RobotFinder'?<RobotFinder setPage={setPage} page={page} />:''}
       {page === 'Home'?<Home setPage={setPage}/>:''}
-      {page === 'Page2'?<Page2 />:''}
+      {/* {page === 'Page2'?<Page2 />:''} */}
 
       {/* I filter Robots by ID and give it to page state as value.
       And map Robots to display Only one robot by its ID in RobotFile */}
