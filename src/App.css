@@ -38,7 +38,7 @@ ul{
 
 .robot-home-container{
   margin: 0;
-  padding: 100px 20%;
+  padding: 100px 10%;
   background-image: url('./assets/bg-header.jpg');
   height: 100vh;
 }
