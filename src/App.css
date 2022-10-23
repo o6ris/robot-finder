@@ -124,3 +124,8 @@ img{
   border-left: 3px solid rgb(187, 78, 78);
 }
 
+.robot-details{
+  display: flex;
+  justify-content: space-around;
+}
+
