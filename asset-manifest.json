@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/robot-finder/static/css/main.0fdb1f4e.css",
+    "main.js": "/robot-finder/static/js/main.57c5b615.js",
+    "static/js/787.01ecde32.chunk.js": "/robot-finder/static/js/787.01ecde32.chunk.js",
+    "static/media/bg-header.jpg": "/robot-finder/static/media/bg-header.b37c5afc20344972b3d8.jpg",
+    "index.html": "/robot-finder/index.html",
+    "main.0fdb1f4e.css.map": "/robot-finder/static/css/main.0fdb1f4e.css.map",
+    "main.57c5b615.js.map": "/robot-finder/static/js/main.57c5b615.js.map",
+    "787.01ecde32.chunk.js.map": "/robot-finder/static/js/787.01ecde32.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0fdb1f4e.css",
+    "static/js/main.57c5b615.js"
+  ]
+}
