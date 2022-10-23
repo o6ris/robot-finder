@@ -1,13 +1,12 @@
-import React, {useState} from 'react'
+import React from 'react'
 import RobotAddress from './RobotAddress';
-import RobotFile from '../pages/RobotFile';
+
 function RoboCard({robot, setPage}) {
 
-  
-
   return (
-    <div onClick={() => setPage('RobotFile')} className='robot-card d-flex flex-column rounded-4'>
-        {/* {console.log(robot)} */}
+    // Set page value to robot ID OnClick
+    <div onClick={() => setPage(robot.id)} className='robot-card d-flex flex-column rounded-4'>
+        
         <h1>{robot.name}</h1>
         <div className='d-flex align-items-center justify-content-around '>
             <div>
