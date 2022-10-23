@@ -31,7 +31,12 @@ function App() {
       Robots
       .filter(robot => page === robot.id)
       // Here I send page value to RobotFile
-      .map((robot,index) => <RobotFile robot={robot} index={index} page={page}/> )
+      .map((robot,index) => <RobotFile 
+      robot={robot} 
+      index={index} 
+      page={page}
+      setPage={setPage}
+      /> )
       }
     </div>
   );

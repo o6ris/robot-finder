@@ -1,11 +1,12 @@
 import React, {useState} from 'react'
 import RobotAddress from '../components/RobotAddress'
-
-function RobotFile({robot, page}) {
+import Robots from '../data/data';
+function RobotFile({robot, page, setPage}) {
 
   const[showLocalisation, setShowLocalisation] = useState(false);
  
     return (
+    <div>
       <div className='robot-singleCard d-flex flex-column rounded-4'>
         
         <h1>{robot.name} <span className='robot-id-singlePage fs-6'>id : {robot.id}</span></h1>
@@ -37,7 +38,7 @@ function RobotFile({robot, page}) {
             </div>
             
         </div>
-      
+        {/* Handle display the localisation thanks to showlocalisation value */}
         <div className={!showLocalisation?'d-none':'d-flex flex-column align-items-center mt-5'}>
           <h3>Geolocalisation</h3>
           <div className='robot-geolocalisation'>
@@ -48,6 +49,18 @@ function RobotFile({robot, page}) {
           </div>
         </div>
     </div>
+    <div className='d-flex justify-content-center'>
+      
+      <button 
+      onClick={page === 1?'':()=>setPage(page-1)} 
+      className={page === 1?'d-none':'robot-button-black m-5'}>Previous robot</button>
+      
+      <button 
+      onClick={page === Robots.length?'':()=>setPage(page+1)} 
+      className={page === Robots.length?'d-none':'robot-button-black m-5'}>Next robot</button>
+
+    </div>
+  </div>
     )
   
 }
