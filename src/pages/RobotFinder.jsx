@@ -5,7 +5,7 @@ import SearchRobot from '../components/SearchRobot';
 import ShowMoreRobots from '../components/ShowMoreRobots';
 
 
-function RobotFinder() {
+function RobotFinder({setPage}) {
   const [searchRobot, setSearchRobot] = useState('')
   const [numberOfRobots, setNumberOfRobots] = useState(0)
   return (
@@ -24,7 +24,7 @@ function RobotFinder() {
         .map((robot,index) =>{
           return(
             <div>
-              <RoboCard index={index} robot={robot}  />
+              <RoboCard index={index} robot={robot} setPage={setPage}  />
             </div>
           )
         })}
