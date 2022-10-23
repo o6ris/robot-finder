@@ -36,11 +36,25 @@ ul{
   margin-left: 15px;
 }
 
-.robot-header{
-  margin-top: 0;
+.robot-home-container{
+  margin: 0;
+  padding: 100px 20%;
   background-image: url('./assets/bg-header.jpg');
+  height: 100vh;
+}
+
+.robot-header{
+  margin: auto;
+  border-radius: 20px;
+  background-color: rgb(33, 33, 33);
+  box-shadow: 10px 10px 10px black;
   height: 300px;
 }
+
+/* .robot-header::before{
+  background-image: url('./assets/bg-header.jpg');
+  height: 300px;
+} */
 
 .robot-search-bar{
   padding: 15px;

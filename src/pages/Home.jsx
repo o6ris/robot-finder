@@ -2,7 +2,7 @@ import React from 'react'
 
 function Home({setPage}) {
   return (
-    <div> 
+    <div className='robot-home-container'> 
       <div className='robot-header d-flex flex-column justify-content-center align-items-center'>
         <h1 className='mb-3 w-50'><small>Here's my first react web application : Find your favorite robot</small></h1>
         {/* On click the button allows to navigate to robot finder page */}
